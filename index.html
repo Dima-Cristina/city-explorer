@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>City Explorer</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>City Explorer</h1>
+    <nav class="menu">
+      <a href="#destinatii">Destinații</a>
+      <a href="#planifica">Planifică</a>
+      <a href="#recomandari">Recomandări</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="destinatii">
+      <h2>Destinații</h2>
+      <div class="cards">
+        <article class="card featured">
+          <h3>Lisabona</h3>
+          <p class="country">Portugalia</p>
+          <p>Orașul celor șapte coline, cu tramvaie galbene, miradouros și pastéis de nata.</p>
+          <p class="duration"><strong>Durata recomandată:</strong> 4 zile</p>
+        </article>
+        <article class="card">
+          <h3>Praga</h3>
+          <p class="country">Cehia</p>
+          <p>Centru medieval bine păstrat, Podul Carol și o scenă de cafenele foarte vie.</p>
+          <p class="duration"><strong>Durata recomandată:</strong> 3 zile</p>
+        </article>
+        <article class="card">
+          <h3>Roma</h3>
+          <p class="country">Italia</p>
+          <p>Colosseum, Forumul Roman și Vatican, într-un oraș în care istoria e la fiecare colț.</p>
+          <p class="duration"><strong>Durata recomandată:</strong> 5 zile</p>
+        </article>
+        <article class="card">
+          <h3>Viena</h3>
+          <p class="country">Austria</p>
+          <p>Palate imperiale, muzee și cafenele clasice, ideale pentru o vizită relaxată.</p>
+          <p class="duration"><strong>Durata recomandată:</strong> 3 zile</p>
+        </article>
+        <article class="card">
+          <h3>Barcelona</h3>
+          <p class="country">Spania</p>
+          <p>Arhitectura lui Gaudí, plaje urbane și o gastronomie renumită.</p>
+          <p class="duration"><strong>Durata recomandată:</strong> 4 zile</p>
+        </article>
+        <article class="card">
+          <h3>Atena</h3>
+          <p class="country">Grecia</p>
+          <p>Acropole, cartierul Plaka și tavernele cu specific grecesc.</p>
+          <p class="duration"><strong>Durata recomandată:</strong> 3 zile</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="planifica">
+      <h2>Planifică</h2>
+      <form class="trip-form" action="#" method="post">
+        <label for="name">Nume</label>
+        <input id="name" name="name" type="text">
+
+        <label for="destination">Destinație</label>
+        <select id="destination" name="destination">
+          <option value="">Alege...</option>
+          <option value="Lisabona">Lisabona</option>
+          <option value="Praga">Praga</option>
+          <option value="Roma">Roma</option>
+          <option value="Viena">Viena</option>
+          <option value="Barcelona">Barcelona</option>
+          <option value="Atena">Atena</option>
+        </select>
+
+        <label for="days">Număr de zile</label>
+        <input id="days" name="days" type="number" min="1">
+
+        <button type="submit">Planifică excursia</button>
+      </form>
+    </section>
+
+    <section id="recomandari">
+      <h2>Recomandări</h2>
+      <ul>
+        <li>Rezervă biletele pentru obiectivele populare cu câteva zile înainte.</li>
+        <li>Poartă încălțăminte comodă: orașele se vizitează cel mai bine pe jos.</li>
+        <li>Verifică dacă există un card de transport pe zile, care costă mai puțin decât biletele separate.</li>
+        <li>Vizitează cele mai căutate locuri dimineața devreme, înainte de aglomerație.</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">Dima Cristina Valentina, 2026</footer>
+</body>
+</html>
