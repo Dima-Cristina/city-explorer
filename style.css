@@ -12,10 +12,9 @@ main { padding: 24px 32px; }
 
 h2 { color: #1f3b5d; }
 
-/* ===== Antet (Flexbox) ===== */
 .site-header {
   display: flex;
-  justify-content: space-between; /* numele în stânga, meniul în dreapta */
+  justify-content: space-between; 
   align-items: center;
   padding: 16px 32px;
   background-color: #1f3b5d;
@@ -36,7 +35,6 @@ h2 { color: #1f3b5d; }
 
 .menu a:hover { text-decoration: underline; }
 
-/* ===== Destinații: carduri (Grid) ===== */
 .cards {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -54,16 +52,14 @@ h2 { color: #1f3b5d; }
 .card .country { margin: 0 0 8px; color: #6b7a90; font-style: italic; }
 .card:hover { box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); }
 
-/* destinația evidențiată */
 .card.featured {
   background-color: #fff6dd;
   border: 2px solid #e0a800;
 }
 
-/* ===== Formular ===== */
 .trip-form {
   display: flex;
-  flex-direction: column; /* câmpurile unul sub altul */
+  flex-direction: column; 
   max-width: 480px;
   padding: 20px;
   background-color: #ffffff;
@@ -98,19 +94,12 @@ input:focus, select:focus { outline: 2px solid #5b3fd9; }
 
 .trip-form button:hover { background-color: #4730b0; }
 
-/* ===== Recomandări ===== */
 #recomandari li { margin-bottom: 8px; }
 
-/* ===== Subsol ===== */
 .site-footer {
   padding: 16px 32px;
   text-align: center;
   color: #6b7a90;
-}
-
-/* ===== ADAPTARE LA ECRANE MICI (se adaugă la al treilea commit) ===== */
-.cards {
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
 }
 
 @media (max-width: 600px) {
